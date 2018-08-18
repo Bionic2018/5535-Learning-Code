@@ -1,7 +1,3 @@
-# 5535-Code-Archive
+# 5535-Learning-Code
 
-Was used alongside Lance-A-Bot's help with Enumerations.
-
-"Welcome to the 5535-Code-Archive!
-
-This repository is strictly a code dumping site. This is all raw code, and some of it is useless. Some of it is very good. Good luck!"
+This is the content that will be used to teach future programmers for Team 5535. This will expand with time, and things will change.
