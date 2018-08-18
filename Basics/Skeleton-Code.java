@@ -1,4 +1,5 @@
 
+
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to each mode, as described in the IterativeRobot
@@ -9,11 +10,16 @@
 public class Robot extends IterativeRobot {
 
 
+
+
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
 	 */
 	public void robotInit() {
+
+
+
 
 
 
@@ -32,7 +38,7 @@ public class Robot extends IterativeRobot {
 	 */
 
 	public void autonomousInit() {
-	
+		
 
 
 
@@ -43,13 +49,17 @@ public class Robot extends IterativeRobot {
 	 */
 	public void autonomousPeriodic() {
 		
-		
+
 	}
 
 	/**
 	 * This function is called periodically during operator control
 	 */
 	public void teleopPeriodic() {
+
+
+
+	}
 
 
 	/**
