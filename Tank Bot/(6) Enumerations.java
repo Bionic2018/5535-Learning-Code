@@ -39,7 +39,7 @@ public class Robot extends IterativeRobot {
 		kTurn,
 		kDone;
 
-}
+
 
 Enumerations currentStage = Enumerations.kDone; //sets the currentStage value
 
