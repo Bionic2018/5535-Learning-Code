@@ -1,4 +1,12 @@
+/*----------------------------------------------------------------------------*/
+/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
+/* Open Source Software - may be modified and shared by FRC teams. The code   */
+/* must be accompanied by the FIRST BSD license file in the root directory of */
+/* the project.                                                               */
+/*----------------------------------------------------------------------------*/
+
 package org.usfirst.frc.team5535.robot;
+
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
@@ -34,7 +42,7 @@ Solenoid solenoid;
 		xbox = new Joystick(0);
 		tank = new RobotDrive(7,8);
 		tank.setExpiration(0.005);
-		xbox1a = new JoystickButton(xbox, 7);
+		xbox1a = new JoystickButton(xbox, 1);
 		xboxselect1 = new JoystickButton(xbox, 7);
 		xboxstart1 = new JoystickButton(xbox, 8);
 		xboxb = new JoystickButton(xbox, 2);
