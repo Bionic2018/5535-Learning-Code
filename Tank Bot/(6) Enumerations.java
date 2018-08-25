@@ -6,6 +6,8 @@ import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.IterativeRobot;
+
 
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.SerialPort;
@@ -129,7 +131,7 @@ Enumerations currentStage = Enumerations.kDone; //sets the currentStage value
 		tank.tankDrive(xbox.getRawAxis(1), xbox.getRawAxis(5));  //joystick movement
     
     if(xbox1a.get()){
-			exampleSolenoid.set(true); //fires solenoid
+			solenoid.set(true); //fires solenoid
 		}
 		else if(xboxb.get()){
 		}
@@ -142,7 +144,7 @@ Enumerations currentStage = Enumerations.kDone; //sets the currentStage value
 
 		}
 		else{
-			exampleSolenoid.set(false); //disables the solenoid if not fired
+			solenoid.set(false); //disables the solenoid if not fired
 
 		}
 		Timer.delay(0.005); //adds a .5 delay to prevent errors
