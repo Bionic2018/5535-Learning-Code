@@ -27,7 +27,7 @@ public class Robot extends IterativeRobot {
   Compressor c = new Compressor(0); //declares compressor
 	Timer timer; //declares a timer
 
-
+}
 
 
 	/**
