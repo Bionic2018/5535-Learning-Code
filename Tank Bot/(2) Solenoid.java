@@ -22,7 +22,7 @@ public class Robot extends IterativeRobot {
   Solenoid solenoid; //declares solenoids
 
 
-
+}
 
 	/**
 	 * This function is run when the robot is first started up and should be
