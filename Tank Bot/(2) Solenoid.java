@@ -4,6 +4,7 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Talon;
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.IterativeRobot;
 
 
@@ -23,7 +24,7 @@ public class Robot extends IterativeRobot {
   Solenoid solenoid; //declares solenoids
 
 
-}
+
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -97,7 +98,7 @@ public class Robot extends IterativeRobot {
 	}
 
 
-	}
+	
 
 
 	/**
