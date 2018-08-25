@@ -17,7 +17,7 @@ public class Robot extends IterativeRobot {
 	Talon left, right; //declares talons
 	RobotDrive tank; //declares drivetrain name
 
-
+}
 
 
 
