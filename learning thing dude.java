@@ -6,7 +6,6 @@
 /*----------------------------------------------------------------------------*/
 
 package org.usfirst.frc.team5535.robot;
-
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
@@ -14,6 +13,7 @@ import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.Compressor;
 
 
 /**
@@ -30,7 +30,7 @@ Talon Left, Right;
 RobotDrive tank;
 JoystickButton xbox1a, xboxselect1, xboxstart1, xboxx, xboxb, xboxy;
 Solenoid solenoid;
-
+Compressor c;
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
@@ -47,7 +47,9 @@ Solenoid solenoid;
 		xboxstart1 = new JoystickButton(xbox, 8);
 		xboxb = new JoystickButton(xbox, 2);
 		solenoid = new Solenoid(1);
+		c = new Compressor(0);
 		
+		c.setClosedLoopControl(false);
 		
 	}
 
@@ -88,8 +90,12 @@ Solenoid solenoid;
 		else if (xboxb.get()){		
 	}
 		else if (xboxselect1.get()){
+			c.setClosedLoopControl(false);
+
 	}
 		else if (xboxstart1.get()){
+			c.setClosedLoopControl(true);
+
 	}
 		else{
 			solenoid.set(false);
