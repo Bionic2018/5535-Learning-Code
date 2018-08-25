@@ -32,7 +32,7 @@ public class Robot extends IterativeRobot {
 	AHRS navX; //decalres NavX
 
 
-}
+
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -122,7 +122,7 @@ public class Robot extends IterativeRobot {
 	}
 
 
-	}
+	
 
 
 	/**
