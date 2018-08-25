@@ -25,7 +25,7 @@ public class Robot extends IterativeRobot {
   Compressor c = new Compressor(0); //declares compressor
 
 
-
+}
 
 	/**
 	 * This function is run when the robot is first started up and should be
