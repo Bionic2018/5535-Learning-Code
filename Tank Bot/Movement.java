@@ -13,9 +13,11 @@ import edu.wpi.first.wpilibj.Talon;
  */
 public class Robot extends IterativeRobot {
 
-	Joystick xbox; 
-	Talon left, right;
-	RobotDrive tank;
+	Joystick xbox; //declares joystick
+	Talon left, right; //declares talons
+	RobotDrive tank; //declares drivetrain name
+
+
 
 
 
@@ -25,9 +27,9 @@ public class Robot extends IterativeRobot {
 	 */
 	public void robotInit() {
   
-		xbox = new Joystick(0);
-		tank = new RobotDrive(7, 8);
-		tank.setExpiration(0.005);
+		xbox = new Joystick(0); //sets joystick value
+		tank = new RobotDrive(7, 8); //sets talons for drivetrain
+		tank.setExpiration(0.005); //eliminates an error
 
 
 
@@ -67,7 +69,9 @@ public class Robot extends IterativeRobot {
 	 */
 	public void teleopPeriodic() {
 
-		tank.tankDrive(xbox.getRawAxis(1), xbox.getRawAxis(5));   	
+		tank.tankDrive(xbox.getRawAxis(1), xbox.getRawAxis(5));  //joystick movement
+    
+   
 
 
 	}
