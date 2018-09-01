@@ -31,6 +31,9 @@ RobotDrive tank;
 JoystickButton xbox1a, xboxselect1, xboxstart1, xboxx, xboxb, xboxy;
 Solenoid solenoid;
 Compressor c;
+Timer timer;
+
+
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
@@ -48,6 +51,7 @@ Compressor c;
 		xboxb = new JoystickButton(xbox, 2);
 		solenoid = new Solenoid(1);
 		c = new Compressor(0);
+		timer = new Timer();
 		
 		c.setClosedLoopControl(false);
 		
@@ -58,6 +62,10 @@ Compressor c;
 	 */
 	@Override
 	public void autonomousInit() {
+		
+		timer.reset();
+			timer.start();
+		
 
 	}
 
@@ -67,6 +75,20 @@ Compressor c;
 	@Override
 	public void autonomousPeriodic() {
 
+		if(timer.get() > 1 && timer.get() < 4) {
+							tank.arcadeDrive(.7,0);
+		}
+			else if (timer.get() > 4) {
+				
+				
+				tank.arcadeDrive(0,0);
+			}
+		
+		
+		
+		
+		
+		
 	}
 	/**
 	 * This function is called once each time the robot enters teleoperated mode.
